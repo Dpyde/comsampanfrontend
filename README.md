@@ -34,3 +34,33 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🏷 Branch/Commit Naming Scheme
+
+Follow this format:
+
+```
+<name>/<type>/<short-description>
+```
+
+### Example:
+
+```
+jay/feat/resume-button
+```
+
+### Types:
+
+- **feat/** – New features (e.g., `arka/feat/add-appointment-page`)
+- **fix/** – Bug fixes (e.g., `alex/fix/responsive-layout`)
+- **chore/** – Maintenance tasks, dependency updates, config changes (e.g., `sam/chore/update-tailwind-config`)
+- **refactor/** – Code refactoring without changing functionality (e.g., `lee/refactor/dashboard-layout`)
+- **remove/** – Removing unused code, dependencies, or features (e.g., `arka/remove/prisma`)
+
+### More Examples:
+
+- `mike/feat/user-profile`
+- `anna/refactor/api-service`
+- `arka/remove/old-api-endpoints`
+
+---
