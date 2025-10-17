@@ -4,14 +4,13 @@ import Image from "next/image";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-
+import NavBar from "./components/navbar";
 
 
 export default function Home() {
   return (
-    <main className="centered">
-      <h1>This is main page</h1>
-      <Button variant="contained">Next</Button>
-    </main>
+    <div className="pixel-font flex flex-col items-center  w-full h-full">
+      <NavBar />
+    </div>
 )
 }

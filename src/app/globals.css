@@ -19,8 +19,28 @@
   }
 }
 
+/* @font-face {
+  font-family: "ZF 2ndPixelus";
+  src: url("/fonts/ZF-2ndPixelus.woff2") format("woff2"),
+       url("/fonts/ZF-2ndPixelus.ttf") format("truetype");
+  font-display: block;
+} */
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* globals.css */
+.pixel-font {
+  font-family: var(--font-zf), ui-monospace, monospace;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+/* Optional: undo smoothing that blurs pixel fonts */
+.pixel-font {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
