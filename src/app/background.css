@@ -1,0 +1,8 @@
+/* Background styles for all pages */
+body {
+  background-image: url('/background/Background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
