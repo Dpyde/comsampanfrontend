@@ -3,8 +3,11 @@ import { createTheme, IconButton, Menu, MenuItem, useMediaQuery } from "@mui/mat
 import { useState } from "react";
 import Image from "next/image";
 import React from "react";
+import { useRouter } from "next/navigation"
+
 export default function NavBar() {
-  
+
+  const router = useRouter();
   const isSmall = useMediaQuery("(max-width:1024px)");
   const isLarge = useMediaQuery("(min-width:1024px)");
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -20,6 +23,11 @@ export default function NavBar() {
         setAnchorEl(null);
 
   };
+  const handleNavigate = (path: string) => {
+    handleClose();
+    router.push(path);
+  }
+
 
 
   return (<div className="flex  fixed items-center lg:w-6/12 w-12/12 px-5 py-2 lg:bg-[#4C5FFF] lg:rounded-bl-xl lg:rounded-br-xl lg:ring-1 lg:ring-white/15 lg:shadow-[0_0_30px_10px_rgba(86,102,255,0.55)]">
@@ -42,7 +50,7 @@ export default function NavBar() {
         }}
 
       >
-        <MenuItem onClick={handleClose}>
+        <MenuItem onClick={() => handleNavigate("./")}>
           <div className="flex w-full justify-between gap-3 pixel-font text-white ">
             <div className="flex justify-end w-12/12">
               <p className="text-[24px]">EVENT MAP</p>
@@ -51,7 +59,7 @@ export default function NavBar() {
             <Image src="/navbar/map.svg" alt="map icon" width={24} height={24} />
           </div>
         </MenuItem>
-        <MenuItem onClick={handleClose}>
+        <MenuItem onClick={() => handleNavigate("./")}>
           <div className="flex w-full justify-between gap-3 pixel-font text-white ">
              <div className="flex justify-end w-12/12">
             <p className="text-[24px]">COMPETITION</p>
@@ -59,7 +67,7 @@ export default function NavBar() {
             <Image src="/navbar/target.svg" alt="map icon" width={24} height={24} />
           </div>
         </MenuItem>
-        <MenuItem onClick={handleClose}>
+        <MenuItem onClick={() => handleNavigate("./")}>
           <div className="flex w-full justify-between gap-3 pixel-font text-white ">
              <div className="flex justify-end w-12/12">
             <p className="text-[24px]">TIME TABLE</p>
@@ -67,7 +75,7 @@ export default function NavBar() {
             <Image src="/navbar/calendar.svg" alt="map icon" width={24} height={24} />
           </div>
         </MenuItem>
-        <MenuItem onClick={handleClose}>
+        <MenuItem onClick={() => handleNavigate("./travelling")}>
           <div className="flex w-full justify-between gap-3 pixel-font text-white ">
              <div className="flex justify-end w-12/12">
             <p className="text-[24px]">HOW TO GO</p>
