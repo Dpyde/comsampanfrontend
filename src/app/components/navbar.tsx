@@ -30,11 +30,12 @@ export default function NavBar() {
 
 
 
-  return (<div className="flex  fixed items-center lg:w-6/12 w-12/12 px-5 py-2 lg:bg-[#4C5FFF] lg:rounded-bl-xl lg:rounded-br-xl lg:ring-1 lg:ring-white/15 lg:shadow-[0_0_30px_10px_rgba(86,102,255,0.55)]">
+  return (
+  <div className="flex  fixed items-start justify-end lg:items-center lg:w-6/12 w-12/12 py-5 px-5 lg:px-5 lg:py-2 lg:bg-[#4C5FFF] lg:rounded-bl-xl lg:rounded-br-xl lg:ring-1 lg:ring-white/15 lg:shadow-[0_0_30px_10px_rgba(86,102,255,0.55)]">
     <div className="lg:flex lg:visible invisible w-11/12 justify-center items-center">
       <p className="text-[#FFFFFF] pixel-font text-[64px] translate-y-[-5px] m-0 p-0">COMSAMPANN 2025</p>
     </div>
-    <div className="w-1/12 h-full flex justify-end items-center">
+    <div className="w-[50px] lg:w-1/12 min-w-[50px] h-full flex justify-center lg:justify-end  bg-[#4C5FFF] rounded-xl ring-1 ring-white/15 shadow-[0_0_30px_10px_rgba(86,102,255,0.55)] lg:bg-transparent lg:rounded-none lg:ring-0 lg:shadow-none">
       <IconButton onClick={handleClick}>
         <Image src={menu} alt="navbar icon" width={30} height={30} />
       </IconButton>
@@ -46,7 +47,7 @@ export default function NavBar() {
         transformOrigin={{ vertical: "top", horizontal: "right" }}
         onClose={handleClose}
         slotProps={{
-          paper: {className:"ring-1 ring-white/15 ", sx: { backgroundColor: "#4C5FFF", mt: isLarge ? 5:0, borderRadius: 2,boxShadow:"0 0 30px 10px rgba(86,102,255,0.55)" } },
+          paper: {className:"ring-1 ring-white/15 mt-2 translate-y-[5px] lg:translate-y-0px[]", sx: { backgroundColor: "#4C5FFF", mt: isLarge ? 5:0, borderRadius: 2,boxShadow:"0 0 30px 10px rgba(86,102,255,0.55)" } },
         }}
 
       >
