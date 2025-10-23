@@ -5,7 +5,7 @@ import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import NavBar from "./components/navbar";
-
+import ResultTable from "./components/ResultTable";
 
 export default function Home() {
   return (
