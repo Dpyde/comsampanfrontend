@@ -9,7 +9,7 @@ import ResultTable from "./components/ResultTable";
 
 export default function Home() {
   return (
-    <div className="w-full h-dvh flex  items-center">
+    <div className="w-full h-dvh flex justify-center  items-center">
       
       {/* <TableComponent /> */}
       <ResultTable />
