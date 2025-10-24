@@ -14,7 +14,7 @@ export default function Home() {
     <div className="flex flex-col items-center  w-full h-full">
       <NavBar />
       {/* <Table /> */}
-      {/* <ResultTable /> */}
+      {/* <ResultTable /> *
     </div>
 )
 }
