@@ -26,7 +26,6 @@ export default function ResultTable() {
                     </tr>
                     ))
                     }
-                   
                 </tbody>
             </table>
             </div>
