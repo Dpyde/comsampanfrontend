@@ -28,7 +28,7 @@ export default function Travelling() {
     return (
         <div className="pixel-font flex flex-col items-center w-full min-h-screen bg-darkblue">
             <NavBar />
-            <div className="flex flex-col items-start mx-10 lg:mt-20">
+            <div className="flex flex-col items-start mx-10 lg:mt-20 lg:items-center">
                 <div className="text-[64px] lg:text-[72px] text-lightgreen tracking-wider my-4" > HOW TO GO </div>
                 <div className="flex bg-[#1E1E1E] rounded-[10px] p-1 gap-1"> 
                     <button
