@@ -33,8 +33,8 @@ export default function Travelling() {
                 <div className="flex bg-[#1E1E1E] rounded-[10px] p-1 gap-1"> 
                     <button
                         onClick={() => setTransport("bts")}
-                        className={`flex items-center pixel-font gap-2 py-1 px-2 text-white rounded-full transition ${
-                            transport === 'bts' ? "bg-[#4C5FFF]" : "bg-transparent"
+                        className={`flex items-center pixel-font gap-2 py-1 px-2 text-white rounded-full transition  ${
+                            transport === 'bts' ? "bg-[#4C5FFF] hover:bg-[#4C5FFF]/80" : "bg-transparent hover:bg-white/10"
                         }`}
                     >
                         <Image src="transport/logo/BTS.svg" alt="bts_svg" width={20} height={20}/>
@@ -43,8 +43,8 @@ export default function Travelling() {
 
                     <button
                         onClick={() => setTransport("mrt")}
-                        className={`flex items-center pixel-font gap-2 py-1 px-2 text-white rounded-full transition ${
-                            transport === 'mrt' ? "bg-[#4C5FFF]" : "bg-transparent"
+                        className={`flex items-center pixel-font gap-2 py-1 px-2 text-white rounded-full transition  ${
+                            transport === 'mrt' ? "bg-[#4C5FFF] hover:bg-[#4C5FFF]/80" : "bg-transparent hover:bg-white/10"
                         }`}
                     >
                         <Image src="transport/logo/MRT.svg" alt="mrt_svg" width={20} height={20}/>
@@ -53,8 +53,8 @@ export default function Travelling() {
 
                     <button
                         onClick={() => setTransport("bus")}
-                        className={`flex items-center pixel-font gap-2 py-1 px-2 text-white rounded-full transition ${
-                            transport === 'bus' ? "bg-[#4C5FFF]" : "bg-transparent"
+                        className={`flex items-center pixel-font gap-2 py-1 px-2 text-white rounded-full transition  ${
+                            transport === 'bus' ? "bg-[#4C5FFF] hover:bg-[#4C5FFF]/80" : "bg-transparent hover:bg-white/10"
                         }`}
                     >
                         <Image src="transport/logo/BUS.svg" alt="bus_svg" width={20} height={20}/>

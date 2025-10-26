@@ -8,7 +8,10 @@ import NavBar from "./components/navbar";
 import Table from "./components/Table";
 import ResultTable from "./components/ResultTable";
 import QuizResultTable from "./components/QuizResultTable";
-import PromptResultTable from "./components/PromptResultTable";
+import PromptResultTableFirst from "./components/PromptResultTableFirst";
+import PromptResultTableSecond from "./components/PromptResultTableSecond";
+import PromptResultTableFinal from "./components/PromptResultTableFinal";
+
 
 
 export default function Home() {
@@ -17,8 +20,10 @@ export default function Home() {
       <NavBar />
       {/* <div className="mt-30"><Table /></div> */}
       {/* <div className="mt-30"><ResultTable /> </div> */}
-      <div className="mt-30">< QuizResultTable /></div>
-      <div className="mt-10"><PromptResultTable/></div>
+      <div className="mt-10">< QuizResultTable /></div>
+      <div className="mt-10"><PromptResultTableFirst/></div>
+      <div className="mt-10"><PromptResultTableSecond/></div>
+      <div className="mt-10"><PromptResultTableFinal/></div>
     </div>
-)
+  )
 }
