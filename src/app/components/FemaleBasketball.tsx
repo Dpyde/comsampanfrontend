@@ -9,7 +9,7 @@ export default function FemaleBasketBall(){
     
 ];
     const dates:string="7 ตุลา 2024 - 14.00 น.";
-    const group:string="กลุ่ม A";
+    const group:string="บาสเกตบอลหญิง";
     return (
         <TableComponent dates={dates} standings={standings} group={group} />
    );

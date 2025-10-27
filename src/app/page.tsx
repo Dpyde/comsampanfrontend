@@ -16,8 +16,8 @@ export default function Home() {
   
   return (
     <div className="flex flex-col items-center  w-full h-auto">
-      {/* <FemaleBasketBall /> */}
-      <MaleBasketball />
+      <FemaleBasketBall />
+      {/* <MaleBasketball /> */}
       
     </div>
 )

@@ -14,7 +14,7 @@ export default function MaleBasketball() {
     //     { id: "A", rank: 1, starred: true, team: "ทีม A", matchScore: "0 - 0", gameScore: "0 - 0" },
     //     { id: "B", rank: 2, starred: true, team: "ทีม B", matchScore: "0 - 0", gameScore: "0 - 0" },
     // ];
-    const groupA="กลุ่ม A";
+    const groupA="บาสเกตบอลชาย";
     //const groupB="กลุ่ม B";
 
     return (<div className="flex min-[1200px]:flex-row flex-col gap-5 items-start">
