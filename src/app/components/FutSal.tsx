@@ -2,6 +2,7 @@
 import ResultTable from "./ResultTable";
 import type { MatchInfo } from "./ResultTable";
 import Xarrow, { Xwrapper } from "react-xarrows";
+import Image from "next/image";
 export default function FutSal(Props: any) {
 
     return (
@@ -10,18 +11,18 @@ export default function FutSal(Props: any) {
                 <div className="w-full h-full grid grid-rows-3 place-content-center gap-4 ">
                     <div id="f11" className="flex items-center">
                         <ResultTable matches={[
-                            { id:"f11a",team: "ทีม ABCDEFG", rank: 5 }, { id:"f11b" ,team: "ทีม ABCDEFG", rank: 5 }]} />
+                            { id: "f11a", team: "ทีม A", rank: 5 }, { id: "f11b", team: "ทีม B", rank: 5 }]} />
 
                     </div>
                     <div id="f12" className="flex items-center">
                         <ResultTable matches={[
-                            { id:"f12a", team: "ทีม ABCDEFG", rank: 5 }]} />
+                            { id: "f12a", team: "ทีม E", rank: 5 }]} />
 
                     </div>
                     <div id="f13" className="flex items-center">
                         <ResultTable matches={[
-                            {id:"f13a" ,team: "ทีม ABCDEFG", rank: 5 },
-                            {id:"f13b", team: "ทีม ABCDEFG", rank: 5 },]} />
+                            { id: "f13a", team: "ทีม C", rank: 5 },
+                            { id: "f13b", team: "ทีม D", rank: 5 },]} />
 
                     </div>
 
@@ -29,19 +30,27 @@ export default function FutSal(Props: any) {
                 <div className="w-full h-full grid grid-rows-3 place-content-center gap-4 ">
                     <div id="f21" className="flex items-center row-span-2">
                         <ResultTable matches={[
-                            {id:"f21a", team: "ทีม A/B", rank: 5 }, {id:"f21b", team: "ทีม E", rank: 5 }]} />
+                            { id: "f21a", team: "ทีม A/B", rank: 5 }, { id: "f21b", team: "ทีม E", rank: 5 }]} />
 
                     </div>
 
 
                 </div>
-                <div className="w-full h-full grid grid-rows-3 place-content-center gap-4 ">
-                    <div id="f31" className="flex items-center row-span-3">
+                <div className=" w-full h-full flex flex-col items-center justify-center gap-4 ">
+                    <div id="f31" className=" relative flex items-center row-span-3">
                         <ResultTable matches={[
-                            {id:"f31a", team: "ทีม A/B/E", rank: 5 }, {id:"f31b", team: "ทีม C/D", rank: 5 }]} />
-
+                            { id: "f31a", team: "ทีม A/B/E", rank: 5,icon:"gold" }, { id: "f31b", team: "ทีม C/D", rank: 5,icon:"silver" }]} />
+                        {/* <div className="absolute -right-6 top-[10px] -translate-y-1/2 z-[9999]">
+                            <div className="relative w-6 h-6 md:w-8 md:h-8 lg:w-12 lg:h-12">
+                                <Image
+                                    src="/table/gold_medal.svg"
+                                    alt="trophy"
+                                    fill
+                                    className="drop-shadow-[0_0_4px_rgba(255,215,0,0.6)]"
+                                />
+                            </div>
+                        </div> */}
                     </div>
-
 
                 </div>
             </div>
@@ -85,7 +94,7 @@ export default function FutSal(Props: any) {
                 strokeWidth={2}
                 showHead={false}
             />
-           
+
         </Xwrapper>
 
     );

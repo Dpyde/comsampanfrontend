@@ -24,8 +24,8 @@ export default function ResultTable({ matches }: ResultTableProps) {
         <div
             className="flex-none w-[clamp(75px,28vw,402px)] border border-white rounded-lg lg:rounded-xl"
         >
-        <table
-        className={`
+            <table
+                className={`
           w-full table-fixed
           bg-[#121139] text-white backdrop-blur-lg
           ${heightClass}                         
@@ -65,25 +65,49 @@ export default function ResultTable({ matches }: ResultTableProps) {
 
                             <td>
                                 <div
-                                    className={`
-                    flex justify-center items-center
-                    bg-white/22
-                    text-[clamp(10px,1.8vw,20px)]
-                    ${idx === 0 ? 'rounded-tr-lg lg:rounded-tr-xl' : ''}
-                    ${idx === matches.length - 1 ? 'rounded-br-lg lg:rounded-br-xl' : ''}
-                    h-full
-                  `}
+                                    className={`flex justify-center items-center bg-white/22 text-[clamp(10px,1.8vw,20px)] ${idx === 0 ? 'rounded-tr-lg lg:rounded-tr-xl' : ''} ${idx === matches.length - 1 ? 'rounded-br-lg lg:rounded-br-xl' : ''} h-full`}
                                 >
                                     {match.rank}
                                 </div>
                             </td>
-
-                            {/* keep your icon block as-is if you use it; no changes needed for responsiveness */}
                             {match.icon && (
-                                <div className="absolute -right-6 top-[10px] -translate-y-1/2 z-[9999]">
-                                    {/* (left untouched per your request) */}
-                                </div>
-                            )}
+                                <div className={`absolute ${idx===0 ? "-right-[clamp(6px,1.5vw,25px)] -top-[clamp(6px,1.3vw,25px)] "
+                                : "-right-[clamp(6px,1.5vw,25px)] -bottom-[clamp(6px,1.3vw,25px)] "} z-[9999]`}>
+                                    {match.icon === "gold" && (
+                                        <div className="relative w-4 h-4 min-[400px]:w-6 min-[400px]:h-6 md:w-8 md:h-8 lg:w-12 lg:h-12">
+                                            <Image
+                                                src="/table/gold_medal.svg"
+                                                alt="trophy"
+                                                fill
+                                                className="drop-shadow-[0_0_4px_rgba(255,215,0,0.6)]"
+                                            />
+                                        </div>
+                                    )}
+                                    {match.icon === "silver" && (
+                                        <div className="relative w-4 h-4 min-[400px]:w-6 min-[400px]:h-6 md:w-8 md:h-8 lg:w-12 lg:h-12">
+                                            <Image
+                                                src="/table/silver_medal.svg"
+                                                alt="silver medal"
+                                                width={40}
+                                                height={40}
+                                                className="drop-shadow-[0_0_4px_rgba(180,180,255,0.6)]"
+                                            />
+                                        </div>
+                                    )}
+                                    {match.icon === "bronze" && (
+                                        <div className="relative w-4 h-4 min-[400px]:w-6 min-[400px]:h-6 md:w-8 md:h-8 lg:w-12 lg:h-12">
+                                            <Image
+                                                src="/table/bronze_medal.svg"
+                                                alt="bronze medal"
+                                                width={40}
+                                                height={40}
+                                                className="drop-shadow-[0_0_4px_rgba(180,180,255,0.6)]"
+                                            />
+                                        </div>
+                                    )}
+                            </div>
+                        )}
+                            
                         </tr>
                     ))}
                 </tbody>
