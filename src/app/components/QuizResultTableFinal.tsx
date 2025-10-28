@@ -9,17 +9,13 @@ export default function QuizResultTableFinal() {
       <Xwrapper>
         {/* first */}
         <div className="flex flex-col justify-around gap-12">
-          <div id="r1a">
+          <div>
             <ResultTable matches={[
               { team: "ทีม A", rank: 5, id:"r1a" }
             ]} />
-          </div>
-          <div id="r1b">
             <ResultTable matches={[
               { team: "ทีม B", rank: 5, id:"r1b" }
             ]}/>
-          </div>
-          <div id="r1c">
             <ResultTable matches={[
             { team: "ทีม C", rank: 5 , id:"r1c"}
           ]}/>
@@ -85,6 +81,7 @@ export default function QuizResultTableFinal() {
           strokeWidth={2}
           showHead={false}
           endAnchor={{ position: "left", offset: { y: 0 } }}
+          startAnchor={{ position: "right", offset: { y: 20 } }}
         />
         <Xarrow
           start="r1c"
@@ -95,7 +92,7 @@ export default function QuizResultTableFinal() {
           color="rgba(255, 255, 255, 1)"
           strokeWidth={2}
           showHead={false}
-        //   startAnchor={{ position: "right", offset: { y: -0 } }}
+          startAnchor={{ position: "right", offset: { y: 20 } }}
         />
         <Xarrow
           start="r2a"

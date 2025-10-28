@@ -9,36 +9,20 @@ export default function PromptResultTableFinal() {
     <div className="relative flex justify-center gap-32 p-10 pl-80 min-h-screen">
       <Xwrapper>
         {/* first */}
-        <div className="flex flex-col justify-around gap-8">
-          <div id="p1a">
+        <div className="flex flex-col justify-around gap-12">
+          <div>
             <ResultTable matches={[
-              { team: "ทีม A", rank: 5, id:"p1a" }
-            ]} />
-          </div>
-          <div id="p1b">
+              { team: "ทีม A", rank: 5, id:"p1a" }]} />
             <ResultTable matches={[
-              { team: "ทีม B", rank: 5, id:"p1b" }
-            ]}/>
-          </div>
-          <div id="p1c">
+              { team: "ทีม B", rank: 5, id:"p1b" }]}/>
             <ResultTable matches={[
-            { team: "ทีม C", rank: 5, id:"p1c" }
-          ]}/>
-          </div>
-          <div id="p1d">
+            { team: "ทีม C", rank: 5, id:"p1c" }]}/>
             <ResultTable matches={[
-            { team: "ทีม D", rank: 5, id:"p1d" }
-          ]}/>
-          </div>
-          <div id="p1e">
+            { team: "ทีม D", rank: 5, id:"p1d" }]}/>
             <ResultTable matches={[
-            { team: "ทีม E", rank: 5, id:"p1e" }
-          ]}/>
-          </div>
-          <div id="p1f">
+            { team: "ทีม E", rank: 5, id:"p1e" }]}/>
             <ResultTable matches={[
-            { team: "ทีม F", rank: 5, id:"p1f" }
-          ]}/>
+            { team: "ทีม F", rank: 5, id:"p1f" }]}/>
           </div>
         </div>
 
@@ -131,6 +115,7 @@ export default function PromptResultTableFinal() {
           strokeWidth={2}
           showHead={false}
           endAnchor={{ position: "left", offset: { y: 0 } }}
+          startAnchor={{ position: "right", offset: { y: 20 } }}
         />
         <Xarrow
           start="p1f"
@@ -141,6 +126,7 @@ export default function PromptResultTableFinal() {
           color="rgba(255, 255, 255, 1)"
           strokeWidth={2}
           showHead={false}
+          startAnchor={{ position: "right", offset: { y: 20 } }}
         />
         <Xarrow
           start="p2a"
