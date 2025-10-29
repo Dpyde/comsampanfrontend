@@ -12,9 +12,10 @@ import ResultTable from "./components/ResultTable";
 export default function Home() {
   return (
     <div className="flex flex-col items-center  w-full h-full">
-      <NavBar />
+      <NavBar /> 
       {/* <Table /> */}
-      {/* <ResultTable /> *
+      {/* <ResultTable /> */}
     </div>
-)
+  
+  )
 }
