@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'HeaderFont';
+  src: url('/fonts/ZF-2ndPixelus.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -10,6 +18,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-white: #FFFFFF;
+  --color-green: #B2F8E7;
+  --color-disable: #919EAB;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +35,10 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-prompt), Arial, Helvetica, sans-serif;
+}
+
+/* Right-side login background */
+.Background\/bg-default {
+  background-color: #121139;
 }
