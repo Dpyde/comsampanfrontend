@@ -7,9 +7,13 @@ import Button from '@mui/material/Button';
 import NavBar from "./components/navbar";
 import Table from "./components/Table";
 import ResultTable from "./components/ResultTable";
-
+import FemaleBasketBall from "./components/FemaleBasketball";
+import TableComponent from "./components/Table";
+import { StandingRow } from "./components/Table";
+import MaleBasketball from "./components/MaleBasketball";
 
 export default function Home() {
+  
   return (
     <div className="flex flex-col items-center  w-full h-full">
       <NavBar /> 
