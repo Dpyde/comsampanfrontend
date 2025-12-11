@@ -1,25 +1,25 @@
-'use client';
+"use client";
+import React from 'react'
+import { useRouter } from 'next/navigation'
 
-import Image from "next/image";
-import Rating from '@mui/material/Rating';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import NavBar from "./components/navbar";
-import Table from "./components/Table";
-import ResultTable from "./components/ResultTable";
-import FemaleBasketBall from "./components/FemaleBasketball";
-import TableComponent from "./components/Table";
-import { StandingRow } from "./components/Table";
-import MaleBasketball from "./components/MaleBasketball";
-
-export default function Home() {
-  
+const page = () => {
+  const router = useRouter()
   return (
-    <div className="flex flex-col items-center  w-full h-full">
-      <NavBar /> 
-      {/* <Table /> */}
-      {/* <ResultTable /> */}
+    <div className='bg-cover bg-center min-h-screen flex justify-center items-center' style={{backgroundImage: "url('/Background.svg')"}}>
+        <div className='flex flex-col text-center items-center'>
+            <div className='pixel-font text-7xl'>Welcome to</div>
+            <div className='pixel-font text-9xl'>COMSANPAN</div>
+            <img className='w-120 h-90 mt-12' src="/image.png" alt="" />
+            <button className='w-86 h-[64px] pixel-font text-6xl rounded-xl bg-[#4C5FFF] mt-10 hover:bg-white hover:text-black' onClick={() => router.push('/schedule')}>Get Started</button>
+
+        </div>
+            
+
+        
+        
+
     </div>
-  
   )
 }
+
+export default page
