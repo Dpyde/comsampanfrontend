@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-color-lightgreen: #B2F8E7;
+  --background-color-darkblue: #121139;
 }
 
 @theme inline {
@@ -19,8 +21,38 @@
   }
 }
 
+/* @font-face {
+  font-family: "ZF 2ndPixelus";
+  src: url("/fonts/ZF-2ndPixelus.woff2") format("woff2"),
+       url("/fonts/ZF-2ndPixelus.ttf") format("truetype");
+  font-display: block;
+} */
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-prompt), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* globals.css */
+.pixel-font {
+  font-family: var(--font-zf), ui-monospace, monospace;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+/* Optional: undo smoothing that blurs pixel fonts */
+.pixel-font {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+.text-lightgreen {
+  color: var(--font-color-lightgreen);
+}
+
+.bg-darkblue {
+  background-color: var(--background-color-darkblue);
 }
