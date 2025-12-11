@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import NavBar from "./components/navbar";
 import Table from "./components/Table";
 import ResultTable from "./components/ResultTable";
+import FutSal from "./components/FutSal";
 
 
 export default function Home() {
