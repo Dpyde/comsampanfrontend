@@ -3,8 +3,9 @@ import ResultTable from "./ResultTable";
 import type { MatchInfo } from "./ResultTable";
 import Xarrow, { Xwrapper } from "react-xarrows";
 import Image from "next/image";
+let futsalTeams=5;
 export default function FutSal(Props: any) {
-
+    
     return (
         <Xwrapper>
             <div className="h-[500px] md:h-[636px] w-full grid grid-cols-3  gap-6 items-stretch">
@@ -99,3 +100,4 @@ export default function FutSal(Props: any) {
 
     );
 }
+export {futsalTeams}
