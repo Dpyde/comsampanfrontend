@@ -15,10 +15,11 @@ import MaleBasketball from "./components/MaleBasketball";
 export default function Home() {
   
   return (
-    <div className="flex flex-col items-center  w-full h-auto">
-      {/* <FemaleBasketBall /> */}
-      <MaleBasketball />
-      
+    <div className="flex flex-col items-center  w-full h-full">
+      <NavBar /> 
+      {/* <Table /> */}
+      {/* <ResultTable /> */}
     </div>
-)
+  
+  )
 }
