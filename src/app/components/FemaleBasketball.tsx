@@ -2,9 +2,9 @@ import ResultTable from "./ResultTable";
 import TableComponent from "./Table";
 import { StandingRow } from "./Table";
 const standings: StandingRow[]=[
-    { id: "A", rank: 1, starred: true, team: "ทีม A", matchScore: "0 - 0", gameScore: "0 - 0" },
-    { id: "B", rank: 2, starred: true, team: "ทีม B", matchScore: "0 - 0", gameScore: "0 - 0" },
-    { id: "C", rank: 3, starred: false,team: "ทีม C", matchScore: "0 - 0", gameScore: "0 - 0" },
+    { id: "A", rank: 1, starred: true, team: "ทีม A", matchScore: "0 - 0" },
+    { id: "B", rank: 2, starred: true, team: "ทีม B", matchScore: "0 - 0" },
+    { id: "C", rank: 3, starred: false,team: "ทีม C", matchScore: "0 - 0" },
     
 ];
 const femaleBasketballTeams=standings.length;
