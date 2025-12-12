@@ -45,7 +45,7 @@ export default function SelectSport({ onSportChange }: { onSportChange?: (value:
           {[
             "ฟุตซอล",
             "บาสเกตบอลชาย",
-            "บาสเกตบอลหญิง",
+            // "บาสเกตบอลหญิง",
             "แข่งเกม prompt",
             "แข่งเกมตอบคำถาม",
           ].map((item) => (
