@@ -12,9 +12,12 @@ export default function FemaleBasketBall(){
     const dates:string="7 ตุลา 2024 - 14.00 น.";
     const group:string="บาสเกตบอลหญิง";
     return (
-        <div className="flex justify-center items-center">
+        <div className="overflow-x-auto">
+            <div className="flex min-w-[637px] justify-center items-center">
             <TableComponent dates={dates} standings={standings} group={group} />
         </div>
+        </div>
+        
    );
 }
 export {femaleBasketballTeams};

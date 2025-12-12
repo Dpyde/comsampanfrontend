@@ -1,51 +1,66 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import { useState } from "react";
 
-import { useState, useRef } from "react";
-
-export default function SelectSport({onSportChange,
-}: {
-  onSportChange?: (value: string) => void;
-}) {
+export default function SelectSport({ onSportChange }: { onSportChange?: (value: string) => void; }) {
   const [open, setOpen] = useState(false);
   const [sport, setSport] = useState("");
-  const ref = useRef(null);
 
-  const handleSelect = (value: string) => {
-  setSport(value);
-  onSportChange?.(value);
-  setOpen(false);
-};
+  const isFloating = sport !== "" || open;
 
   return (
     <div className="relative w-full">
-      {/* Select box */}
+
+      {/* Outline */}
       <div
-        ref={ref}
-        onClick={() => setOpen(!open)}
-        className="w-full border border-white text-white px-4 py-3 rounded cursor-pointer"
+        className="
+          absolute inset-0 rounded border border-white pointer-events-none
+        "
+        style={{
+          clipPath: isFloating
+            ? "polygon(0 0, 8px 0, 8px 12px, 85px 12px, 85px 0, 100% 0, 100% 100%, 0 100%)"
+            : "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+        }}
+      />
+
+      {/* Floating Label */}
+      <label
+        className={`
+          absolute transition-all text-white px-1
+          ${isFloating ? "text-xs -top-2 left-2" : "text-base top-4 left-4 opacity-70"}
+        `}
       >
-        {sport || "เลือกชนิดกีฬา"}
+        เลือกชนิดกีฬา
+      </label>
+
+      {/* Input Area */}
+      <div
+        onClick={() => setOpen(!open)}
+        className="relative h-14 flex items-center px-4 text-white cursor-pointer"
+      >
+        {sport || ""}
       </div>
 
-      {/* Dropdown menu */}
+      {/* Dropdown */}
       {open && (
-        <div className="absolute top-[100%] left-0 w-full bg-white text-black rounded shadow-lg mt-1 z-50">
-          {["ฟุตซอล","บาสเกตบอลชาย","บาสเกตบอลหญิง","แข่งเกม prompt","แข่งเกมตอบคำถาม"].map(
-            (item) => (
-              <div
-                key={item}
-                onClick={() => handleSelect(item)}
-                className="px-4 py-3 hover:bg-gray-200 cursor-pointer"
-              >
-                {item}
-              </div>
-            )
-          )}
+        <div className="absolute top-[110%] left-0 w-full bg-white text-black rounded shadow-lg z-50">
+          {[
+            "ฟุตซอล",
+            "บาสเกตบอลชาย",
+            "บาสเกตบอลหญิง",
+            "แข่งเกม prompt",
+            "แข่งเกมตอบคำถาม",
+          ].map((item) => (
+            <div
+              key={item}
+              onClick={() => {
+                setSport(item);
+                onSportChange?.(item);
+                setOpen(false);
+              }}
+              className="px-4 py-3 hover:bg-gray-200 cursor-pointer"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       )}
     </div>
