@@ -12,22 +12,22 @@ export default function Travelling() {
     const [transport, setTransport] = useState<'bts' | 'mrt' | 'bus'>('mrt');
     const transportData = {
         bts: {
-            img : "/transport/example.svg",
-            text: "ลงที่ BTS สยาม จากนั้นต่อรถหรือนั่งวินมาที่สามย่านมิตรทาวน์"
+            img : "/transport/Map-BTS-IT-1.png",
+            text: `ลงที่ BTS สยาม ${"\n"} จากนั้นต่อรถหรือนั่งวินมาที่สามย่านมิตรทาวน์`
         },
         mrt: {
-            img : "/transport/example.svg",
-            text: "ลงที่ MRT สถานีสามย่าน จากนั้นเดินไปที่จามจุรีสแควร์ และออกทางประตู KFC"
+            img : "/transport/Map-MRT-IT.png",
+            text: `ลงที่ MRT สถานีสามย่าน ${"\n"} จากนั้นเดินไปที่จามจุรีสแควร์ และออกทางประตู KFC`
         },
         bus: {
-            img : "/transport/example.svg",
-            text: "สามารถนั่งรถเมล์สาย 29, 47, 50, หรือ 93 ลงที่ป้ายจามจุรีสแควร์"
+            img : "/transport/Map-BUS-IT-1.png",
+            text: `สามารถนั่งรถเมล์สาย 29, 47, 50, หรือ 93 ${"\n"} ลงที่ป้ายจามจุรีสแควร์`
         }
     }
 
     return (
         <div className="pixel-font flex flex-col items-center w-full min-h-screen bg-darkblue">
-            <NavBar />
+            
             <div className="flex flex-col items-start mx-10 lg:mt-20">
                 <div className="text-[64px] lg:text-[72px] text-lightgreen tracking-wider my-4" > HOW TO GO </div>
                 <div className="flex bg-[#1E1E1E] rounded-[10px] p-1 gap-1"> 
@@ -61,7 +61,7 @@ export default function Travelling() {
                         <span className="text-[20px] lg:text-[24px]"> BUS </span>
                     </button>
                 </div>
-
+                
                 <div className="rounded-[15px] flex items-center justify-center my-4 overflow-hidden">
                     <Image
                         src={(transportData[transport]).img}
@@ -72,7 +72,7 @@ export default function Travelling() {
                     />
                 </div>
 
-                <p className="text-white pixel-font text-[32px] lg:text-[40px] leading-relaxed text-left px-2 mb-10">
+                <p className="text-white pixel-font text-[18px] sm:text-[25px] md:text-[30px] lg:text-[40px] leading-relaxed text-center px-2 mb-10 whitespace-pre-line break-words max-w-[790px] mx-auto">
                     {transportData[transport].text}
                 </p>
             </div>

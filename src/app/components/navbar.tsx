@@ -31,7 +31,7 @@ export default function NavBar() {
 
 
   return (
-  <div className="flex  fixed items-start justify-end lg:items-center lg:w-6/12 w-12/12 py-5 px-5 lg:px-5 lg:py-2 lg:bg-[#4C5FFF] lg:rounded-bl-xl lg:rounded-br-xl lg:ring-1 lg:ring-white/15 lg:shadow-[0_0_30px_10px_rgba(86,102,255,0.55)]">
+  <div className="flex  fixed z-50 items-start justify-end lg:items-center lg:w-6/12 w-12/12 py-5 px-5 lg:px-5 lg:py-2 lg:bg-[#4C5FFF] lg:rounded-bl-xl lg:rounded-br-xl lg:ring-1 lg:ring-white/15 lg:shadow-[0_0_30px_10px_rgba(86,102,255,0.55)]">
     <div className="lg:flex lg:visible invisible w-11/12 justify-center items-center">
       <p className="text-[#FFFFFF] pixel-font text-[64px] translate-y-[-5px] m-0 p-0">COMSAMPANN 2025</p>
     </div>
@@ -51,7 +51,7 @@ export default function NavBar() {
         }}
 
       >
-        <MenuItem onClick={() => handleNavigate("./")}>
+        {/* <MenuItem onClick={() => handleNavigate("./")}>
           <div className="flex w-full justify-between gap-3 pixel-font text-white ">
             <div className="flex justify-end w-12/12">
               <p className="text-[24px]">EVENT MAP</p>
@@ -59,8 +59,8 @@ export default function NavBar() {
             
             <Image src="/navbar/map.svg" alt="map icon" width={24} height={24} />
           </div>
-        </MenuItem>
-        <MenuItem onClick={() => handleNavigate("./")}>
+        </MenuItem> */}
+        <MenuItem onClick={() => handleNavigate("./result")}>
           <div className="flex w-full justify-between gap-3 pixel-font text-white ">
              <div className="flex justify-end w-12/12">
             <p className="text-[24px]">COMPETITION</p>
@@ -68,7 +68,7 @@ export default function NavBar() {
             <Image src="/navbar/target.svg" alt="map icon" width={24} height={24} />
           </div>
         </MenuItem>
-        <MenuItem onClick={() => handleNavigate("./")}>
+        <MenuItem onClick={() => handleNavigate("./schedule")}>
           <div className="flex w-full justify-between gap-3 pixel-font text-white ">
              <div className="flex justify-end w-12/12">
             <p className="text-[24px]">TIME TABLE</p>

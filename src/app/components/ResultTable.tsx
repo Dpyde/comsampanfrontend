@@ -14,11 +14,10 @@ interface ResultTableProps {
 export default function ResultTable({ matches }: ResultTableProps) {
     const matchCount = matches.length;
 
-    // keep your logic, but make heights responsive to viewport
     const heightClass =
         matchCount === 1
-            ? "h-[clamp(48px,5vw,70px)]"          // was 70px / 60px
-            : "h-[clamp(96px,11vw,130px)]";         // was 130px / 120px
+            ? "h-[clamp(48px,5vw,70px)]"          
+            : "h-[clamp(96px,11vw,130px)]";         
 
     return (
         <div
