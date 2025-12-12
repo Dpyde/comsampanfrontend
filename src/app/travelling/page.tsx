@@ -72,7 +72,7 @@ export default function Travelling() {
                     />
                 </div>
 
-                <p className="text-white pixel-font text-[30px] lg:text-[40px] leading-relaxed text-center px-2 mb-10 whitespace-pre-line break-words max-w-[790px] mx-auto">
+                <p className="text-white pixel-font text-[18px] sm:text-[25px] md:text-[30px] lg:text-[40px] leading-relaxed text-center px-2 mb-10 whitespace-pre-line break-words max-w-[790px] mx-auto">
                     {transportData[transport].text}
                 </p>
             </div>
