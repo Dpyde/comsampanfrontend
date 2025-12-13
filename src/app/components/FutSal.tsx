@@ -6,8 +6,8 @@ import Image from "next/image";
 let futsalTeams = 4;
 export default function FutSal(Props: any) {
   return (
-    <div className="overflow-x-auto">
-      <div className="relative flex min-w-[500px] justify-center ">
+    <div className="overflow-x-auto pl-10 max-[445px]:pl-5 max-[410px]:pl-0">
+      <div className="relative flex min-w-[500px] justify-start ">
         <Xwrapper>
           <div className="h-[500px] md:h-[636px] w-full grid grid-cols-3  gap-6 items-stretch">
             <div className="w-full h-full flex flex-col justify-center gap-4 items-end">

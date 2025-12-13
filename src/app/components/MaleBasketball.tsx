@@ -38,11 +38,11 @@ export default function MaleBasketball() {
     const groupA = "บาสเกตบอลชาย";
 
     return (
-        <div className="overflow-x-auto">
-            <div className="flex min-w-[490px] min-[1200px]:flex-row flex-col gap-5 items-center justify-center">
+        
+            <div className="flex w-full min-[1200px]:flex-row flex-col gap-5 items-center justify-center">
                 <TableComponent standings={updatedStandings} dates={dates1} group={groupA} />
             </div>
-        </div>
+        
     );
 }
 
