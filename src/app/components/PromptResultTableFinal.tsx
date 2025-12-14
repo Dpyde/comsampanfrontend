@@ -26,7 +26,7 @@ export default function PromptResultTableFinal() {
         {/* third */}
         <div className="flex flex-col justify-center">
             <ResultTable matches={[
-              { team: "เจมินิ", rank: 0, id:"p3a",
+              { team: "เจมินิ", rank: 0,icon:"gold", id:"p3a",
                 //  icon:"gold"
                  },
               
