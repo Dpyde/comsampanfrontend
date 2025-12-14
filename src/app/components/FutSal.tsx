@@ -33,10 +33,10 @@ export default function FutSal(Props: any) {
               <div id="f31" className=" relative flex items-center row-span-3">
                 <ResultTable
                   matches={[
-                    { id: "f31a", team: "ทีม KMITL", rank: 0, 
+                    { id: "f31a", team: "ทีม KMITL", rank: 7, 
                         // icon: "gold"
                     },
-                    { id: "f31b", team: "ทีม KU", rank: 0, 
+                    { id: "f31b", team: "ทีม KU", rank: 5, 
                         // icon: "silver" 
                     },
                   ]}

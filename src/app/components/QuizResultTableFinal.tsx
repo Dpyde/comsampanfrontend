@@ -59,8 +59,8 @@ export default function QuizResultTableFinal() {
           <div className="flex flex-col justify-center " id="r3a">
             <ResultTable
               matches={[
-                { team: "D", rank: 0, icon: "gold", id: "r3b" },
-                { team: "E", rank: 0, icon: "silver", id: "r3c" },
+                { team: "อิหยัง", rank: 0, icon: "gold", id: "r3b" },
+                { team: "KUJETH", rank: 0, icon: "silver", id: "r3c" },
               ]}
             />
           </div>
