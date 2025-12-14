@@ -12,19 +12,19 @@ export default function QuizResultTableFinal() {
           <div className="flex flex-col justify-around gap-12">
             <div>
               <ResultTable
-                matches={[{ team: "6.7% winrate", rank: 40, id: "r1a" }]}
+                matches={[{ team: "6.7% winrate", rank: 90, id: "r1a" }]}
               />
               <ResultTable
-                matches={[{ team: "ติ๋มอย่าทิ้งเค้า", rank: 30, id: "r1b" }]}
+                matches={[{ team: "ติ๋มอย่าทิ้งเค้า", rank: 70, id: "r1b" }]}
               />
               <ResultTable
-                matches={[{ team: "KUJETH", rank: 30, id: "r1c" }]}
+                matches={[{ team: "KUJETH", rank: 80, id: "r1c" }]}
               />
               <ResultTable
-                matches={[{ team: "sudo win siit", rank: 40, id: "r1d" }]}
+                matches={[{ team: "sudo win siit", rank: 60, id: "r1d" }]}
               />
               <ResultTable
-                matches={[{ team: "อิหยัง", rank: 40, id: "r1e" }]}
+                matches={[{ team: "อิหยัง", rank: 80, id: "r1e" }]}
               />
             </div>
           </div>
