@@ -30,7 +30,7 @@ export default function CompetitionResult() {
     setTeam(teamMap[value] ?? 0);
   };
   return (
-    <div className="w-full min-h-screen overflow-x-auto flex justify-center pb-6 px-6 ">
+    <div className="w-full min-h-screen overflow-x-auto flex justify-center pb-6 px-6" style={{backgroundImage: "url('background/Background.svg')"}}>
       <div className="w-full min-w-[200px] self-start min-[1024px]:mt-30 mt-24 max-w-[1400px] min-h-[75vh] p-6 backdrop-blur-xl rounded-2xl bg-white/5 border border-white ">
         {/* Title */}
         <h1 className="text-white text-3xl max-[300px]:text-xl  font-bold mb-8">
