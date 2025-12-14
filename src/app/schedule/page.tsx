@@ -8,7 +8,7 @@ const page = () => {
         <NavBar />
         <div>
              <div className='pixel-font text-[#B2F8E7] text-[64px] lg:text-[72px] mt-25'>Schedule</div>
-            <img className=' mt-12 w-[1080px] h-[1350px]' src="timeline/timeline.png" alt="" />
+            <img className='mt-12 w-full max-w-[1080px] h-auto' src="timeline/timeline.png" alt="" />
 
         </div>
     </div>
