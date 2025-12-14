@@ -32,12 +32,12 @@ export default function QuizResultTableFinal() {
           {/* second */}
           <div className="flex flex-col justify-center gap-64">
             <div id="r2a">
-              <ResultTable matches={[{ team: "ทีม A", rank: 0, id: "r2b" }]} />
-              <ResultTable matches={[{ team: "ทีม B", rank: 0, id: "r2c" }]} />
+              <ResultTable matches={[{ team: "KUJETH", rank: 0, id: "r2b" }]} />
+              <ResultTable matches={[{ team: "อิหยัง", rank: 0, id: "r2c" }]} />
               <ResultTable
                 matches={[
                   {
-                    team: "ทีม C",
+                    team: "6.7% winrate",
                     rank: 0,
                     //  icon: "bronze",
                     id: "r2d",
@@ -59,8 +59,8 @@ export default function QuizResultTableFinal() {
           <div className="flex flex-col justify-center " id="r3a">
             <ResultTable
               matches={[
-                { team: "ทีม D", rank: 0, icon: "gold", id: "r3b" },
-                { team: "ทีม E", rank: 0, icon: "silver", id: "r3c" },
+                { team: "D", rank: 0, icon: "gold", id: "r3b" },
+                { team: "E", rank: 0, icon: "silver", id: "r3c" },
               ]}
             />
           </div>
