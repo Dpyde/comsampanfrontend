@@ -11,19 +11,19 @@ export default function QuizResultTableFinal() {
           {/* first */}
           <div className="flex flex-col justify-around gap-12">
             <div>
-              <ResultTable matches={[{ team: "6.7% winrate", rank: 5, id: "r1a" }]} />
-              <ResultTable matches={[{ team: "ติ๋มอย่าทิ้งเค้า", rank: 5, id: "r1b" }]} />
-              <ResultTable matches={[{ team: "KUJETH", rank: 5, id: "r1c" }]} />
-              <ResultTable matches={[{ team: "sudo win siit", rank: 5, id: "r1d" }]} />
-              <ResultTable matches={[{ team: "อิหยัง", rank: 5, id: "r1e" }]} />
+              <ResultTable matches={[{ team: "6.7% winrate", rank: 0, id: "r1a" }]} />
+              <ResultTable matches={[{ team: "ติ๋มอย่าทิ้งเค้า", rank: 0, id: "r1b" }]} />
+              <ResultTable matches={[{ team: "KUJETH", rank: 0, id: "r1c" }]} />
+              <ResultTable matches={[{ team: "sudo win siit", rank: 0, id: "r1d" }]} />
+              <ResultTable matches={[{ team: "อิหยัง", rank: 0, id: "r1e" }]} />
             </div>
           </div>
 
           {/* second */}
           <div className="flex flex-col justify-center gap-64">
             <div id="r2a">
-              <ResultTable matches={[{ team: "ทีม A", rank: 5, id: "r2b" }]} />
-              <ResultTable matches={[{ team: "ทีม B", rank: 5, id: "r2c" }]} />
+              <ResultTable matches={[{ team: "ทีม A", rank: 0, id: "r2b" }]} />
+              <ResultTable matches={[{ team: "ทีม B", rank: 0, id: "r2c" }]} />
               <ResultTable
                 matches={[
                   { team: "ทีม C", rank: 5,
@@ -46,8 +46,8 @@ export default function QuizResultTableFinal() {
           <div className="flex flex-col justify-center "id="r3a">
             <ResultTable
               matches={[
-                { team: "ทีม D", rank: 5, icon: "gold", id: "r3b" },
-                { team: "ทีม E", rank: 5, icon: "silver", id: "r3c" },
+                { team: "ทีม D", rank: 0, icon: "gold", id: "r3b" },
+                { team: "ทีม E", rank: 0, icon: "silver", id: "r3c" },
               ]}
             />
           </div>
