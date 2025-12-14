@@ -11,11 +11,11 @@ export default function QuizResultTableFinal() {
           {/* first */}
           <div className="flex flex-col justify-around gap-12">
             <div>
-              <ResultTable matches={[{ team: "6.7% winrate", rank: 0, id: "r1a" }]} />
-              <ResultTable matches={[{ team: "ติ๋มอย่าทิ้งเค้า", rank: 0, id: "r1b" }]} />
-              <ResultTable matches={[{ team: "KUJETH", rank: 0, id: "r1c" }]} />
-              <ResultTable matches={[{ team: "sudo win siit", rank: 0, id: "r1d" }]} />
-              <ResultTable matches={[{ team: "อิหยัง", rank: 0, id: "r1e" }]} />
+              <ResultTable matches={[{ team: "6.7% winrate", rank: 40, id: "r1a" }]} />
+              <ResultTable matches={[{ team: "ติ๋มอย่าทิ้งเค้า", rank: 30, id: "r1b" }]} />
+              <ResultTable matches={[{ team: "KUJETH", rank: 30, id: "r1c" }]} />
+              <ResultTable matches={[{ team: "sudo win siit", rank: 40, id: "r1d" }]} />
+              <ResultTable matches={[{ team: "อิหยัง", rank: 40, id: "r1e" }]} />
             </div>
           </div>
 
