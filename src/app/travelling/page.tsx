@@ -9,7 +9,7 @@ import { useState } from "react";
 
 // img and text just only examples.
 export default function Travelling() {
-    const [transport, setTransport] = useState<'bts' | 'mrt' | 'bus'>('mrt');
+    const [transport, setTransport] = useState<'bts' | 'mrt' >('mrt');
     const transportData = {
         bts: {
             img : "/transport/Map-BTS-IT-1.png",
@@ -19,10 +19,7 @@ export default function Travelling() {
             img : "/transport/Map-MRT-IT.png",
             text: `ลงที่ MRT สถานีสามย่าน ${"\n"} จากนั้นเดินไปที่จามจุรีสแควร์ และออกทางประตู KFC`
         },
-        bus: {
-            img : "/transport/Map-BUS-IT-1.png",
-            text: `สามารถนั่งรถเมล์สาย 29, 47, 50, หรือ 93 ${"\n"} ลงที่ป้ายจามจุรีสแควร์`
-        }
+        
     }
 
     return (
@@ -51,15 +48,7 @@ export default function Travelling() {
                         <span className="text-[20px] lg:text-[24px]"> MRT </span>
                     </button>
 
-                    <button
-                        onClick={() => setTransport("bus")}
-                        className={`flex items-center pixel-font gap-2 py-1 px-2 text-white rounded-full transition ${
-                            transport === 'bus' ? "bg-[#4C5FFF]" : "bg-transparent"
-                        }`}
-                    >
-                        <Image src="transport/logo/BUS.svg" alt="bus_svg" width={20} height={20}/>
-                        <span className="text-[20px] lg:text-[24px]"> BUS </span>
-                    </button>
+                    
                 </div>
                 
                 <div className="rounded-[15px] flex items-center justify-center my-4 overflow-hidden">
