@@ -3,9 +3,9 @@ import { StandingRow } from "./Table";
 
 const standings1: StandingRow[] = [
     { id: "A", rank: 1, starred: true, team: "CU", matchScore: "1 - 1",  },
-    { id: "B", rank: 2, starred: true, team: "KU", matchScore: "0 - 1",  },
+    { id: "B", rank: 2, starred: true, team: "KU", matchScore: "0 - 2",  },
     { id: "C", rank: 3, starred: false, team: "KMITL", matchScore: "2 - 0",  },
-    { id: "D", rank: 4, starred: false, team: "KMUTT", matchScore: "0 - 1", },
+    { id: "D", rank: 4, starred: false, team: "KMUTT", matchScore: "1 - 1", },
 ];
 
 // Function to parse matchScore "wins - losses"
