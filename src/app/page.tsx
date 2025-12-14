@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation'
 const page = () => {
   const router = useRouter()
   return (
-    <div className='bg-cover min-[1024px]:mt-22 bg-center min-h-screen flex justify-center items-center' style={{backgroundImage: "url('background/Background.svg')"}}>
-        <div className='flex flex-col text-center items-center px-4'>
+    <div className='bg-cover bg-center min-h-screen flex justify-center items-center' style={{backgroundImage: "url('background/Background.svg')"}}>
+        <div className='flex flex-col text-center min-[1024px]:pt-22 items-center px-4'>
             <div className='pixel-font text-4xl text-white md:text-7xl lg:text-9xl'>Welcome to</div>
             <div className='pixel-font text-6xl text-white md:text-9xl'>Comsampan</div>
             <img className='w-80 h-60 md:w-120 md:h-90 mt-8 md:mt-12' src="/image.png" alt="" />
