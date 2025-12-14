@@ -2,8 +2,8 @@ import TableComponent from "./Table";
 import { StandingRow } from "./Table";
 
 const standings1: StandingRow[] = [
-    { id: "A", rank: 1, starred: true, team: "CU", matchScore: "1 - 1",  },
-    { id: "B", rank: 2, starred: true, team: "KU", matchScore: "0 - 2",  },
+    { id: "A", rank: 1, starred: true, team: "CU", matchScore: "2 - 1",  },
+    { id: "B", rank: 2, starred: true, team: "KU", matchScore: "0 - 3",  },
     { id: "C", rank: 3, starred: false, team: "KMITL", matchScore: "3 - 0",  },
     { id: "D", rank: 4, starred: false, team: "KMUTT", matchScore: "1 - 2", },
 ];
